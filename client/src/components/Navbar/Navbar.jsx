@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import logoImg      from '../../assets/logo_website-removebg-preview.png';
 import shoppingCart from '../../assets/shopping.png';
-
+import { FaSearch } from 'react-icons/fa';
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -15,6 +15,7 @@ const Navbar = () => {
         <li>Contact</li>
       </ul>
       <div className="search-box">
+        <FaSearch className='search-icon'/>
         <input type="text" placeholder="Search…" />
       </div>
       <img src={shoppingCart} alt="Shopping cart" className="pannel" />
